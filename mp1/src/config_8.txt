@@ -1,0 +1,9 @@
+8
+node1 sp23-cs425-5001.cs.illinois.edu 5678
+node2 sp23-cs425-5002.cs.illinois.edu 5678
+node3 sp23-cs425-5003.cs.illinois.edu 5678
+node4 sp23-cs425-5004.cs.illinois.edu 5678
+node5 sp23-cs425-5005.cs.illinois.edu 5678
+node6 sp23-cs425-5006.cs.illinois.edu 5678
+node7 sp23-cs425-5007.cs.illinois.edu 5678
+node8 sp23-cs425-5008.cs.illinois.edu 5678

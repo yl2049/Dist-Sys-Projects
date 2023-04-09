@@ -1,0 +1,8 @@
+/.idea
+/out
+.DS_Store
+mp1.iml
+*.xml
+download.sh
+kill.sh
+run.sh
