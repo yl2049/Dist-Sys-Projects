@@ -4,7 +4,7 @@ Raft
 
 ### Configure
 ```
-	cd src
+    cd src
     go mod init raft
 ```
 
