@@ -25,15 +25,6 @@ public class Server {
     protected ServerService[] serverServiceArray;
     protected ConcurrentHashMap<String, Account> accounts;    // account storage
 
-    class Pair<String, Thread> {
-        String transactionID;
-        Thread thread;
-        Pair(String transactionID, Thread thread) {
-            this.transactionID = transactionID;
-            this.thread = thread;
-        }
-    }
-
     public Server(String args[]) {
         name = args[0];
         serverID = 0;

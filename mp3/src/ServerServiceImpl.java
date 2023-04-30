@@ -50,7 +50,6 @@ public class ServerServiceImpl extends UnicastRemoteObject implements ServerServ
                         return String.valueOf(balance);
                     } else {
                         if (maxWTS.equals(transactionID)) {
-//                            balance = account.getBalance() + account.getTWAmount(transactionID);
                             balance = account.getTWAmount(transactionID);
                             return String.valueOf(balance);
                         } else {
@@ -72,7 +71,6 @@ public class ServerServiceImpl extends UnicastRemoteObject implements ServerServ
                     return null;
                 }
             }
-//            return String.valueOf(balance);
         }
     }
 
