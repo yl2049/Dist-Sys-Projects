@@ -9,7 +9,7 @@ import java.util.concurrent.PriorityBlockingQueue;
 
 
 public class Node {
-    static final int TIMEOUT = 2 * 5;
+    static final int TIMEOUT = 4 * 5 + 1;   // at most 3 node failures, need a timeout > 4 * 5
 
     private volatile HashMap<Integer, Socket> socketMap;
     private volatile HashMap<Integer, String> clientNameMap;
