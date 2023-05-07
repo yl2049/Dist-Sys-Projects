@@ -94,14 +94,9 @@ public class Client {
 
                 switch (strs[0]) {
                     case "BEGIN":
-                        if (clientService.transactionBegin(name)) {
-                            // OK
-                            System.out.println("OK");
-                        } else {
-                            // aborted
-                            System.out.println("ABORTED");
-                            continueFlag = false;
-                        }
+                        clientService.transactionBegin(name);
+                        // OK
+                        System.out.println("OK");
                         break;
                     case "COMMIT":
                         if (clientService.transactionCommit(name)) {

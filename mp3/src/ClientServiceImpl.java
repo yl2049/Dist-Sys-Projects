@@ -42,10 +42,6 @@ public class ClientServiceImpl extends UnicastRemoteObject implements ClientServ
      */
     @Override
     public boolean transactionBegin(String clientName) throws RemoteException {
-        // clientName should be unique
-        if (transactionMap.containsKey(clientName)) {
-            return false;
-        }
         String id = NanoTimer.getTime() + " " + clientName;
         transactionMap.put(clientName, new Transaction(id));
         return true;
@@ -104,7 +100,7 @@ public class ClientServiceImpl extends UnicastRemoteObject implements ClientServ
                 transactionAbort(clientName);
                 return false;
             }
-        } catch (NoSuchObjectException e) {
+        } catch (Exception e) {
             transactionAbort(clientName);
             throw new NoSuchObjectException("Account does not exist: " + serverName + "." + accountName);
         }

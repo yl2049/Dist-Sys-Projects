@@ -24,7 +24,7 @@ sleep 1
 
 # run 2 tests
 timeout -s SIGTERM 5s ./client a config.txt < ${curr_folder}input1.txt > ${curr_folder}output1.log 2>&1
-timeout -s SIGTERM 5s ./client b config.txt < ${curr_folder}input2.txt > ${curr_folder}output2.log 2>&1
+timeout -s SIGTERM 5s ./client a config.txt < ${curr_folder}input2.txt > ${curr_folder}output2.log 2>&1
 
 cd $curr_folder
 echo "Difference between your output and expected output:"
