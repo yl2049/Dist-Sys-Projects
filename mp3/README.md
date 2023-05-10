@@ -15,8 +15,8 @@ If you use IntelliJ IDEA, follow the instructions below and package server.java 
 Run
 ```
 cd test/src
-./convert.sh client.java client
-./convert.sh server.java server
+./convert.sh client.jar client
+./convert.sh server.jar server
 ```
 ### Run the Program
 Upload server, client, and config_file to corresponding VMs.
